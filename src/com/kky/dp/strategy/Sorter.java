@@ -1,4 +1,4 @@
-package com.kky.dp.strategy.src.com.kky;
+package com.kky.dp.strategy;
 
 import com.kky.ComparatorContext;
 

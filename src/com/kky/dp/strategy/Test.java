@@ -1,6 +1,4 @@
-package com.kky.dp.strategy.src.com.kky;
-
-import com.kky.*;
+package com.kky.dp.strategy;
 
 import java.util.Arrays;
 
