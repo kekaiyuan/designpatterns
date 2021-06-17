@@ -1,6 +1,6 @@
 package com.kky.dp.strategy;
 
-import com.kky.ComparatorContext;
+import com.kky.dp.strategy.ComparatorContext;
 
 /**
  * @author 柯凯元

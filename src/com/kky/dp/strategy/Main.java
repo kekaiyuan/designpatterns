@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author 柯凯元
  * @create 2021/6/3 14:42
  */
-public class Test {
+public class Main {
 
     public static void main(String[] args) {
 
