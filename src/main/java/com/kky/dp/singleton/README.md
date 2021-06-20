@@ -1,4 +1,4 @@
-## 单例singleton
+## 单例 singleton
 - Mgr01：饿汉式
 - Mgr02：与Mgr01一样，只是写法略有不同
 - Mgr03：懒汉式，多线程时无法实现单例
