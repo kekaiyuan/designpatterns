@@ -10,6 +10,10 @@
 实现了 ArrayList 和 LinkedList ， 以及它们的迭代器 Iterator
 
 ## 代理 proxy
+- 静态代理 static
+- 动态代理 dynamic
+  - JDK 方式的动态代理 proxy
+  - cglib 方式的动态 cglib
 
 ## 单例 singleton
 - Mgr01：饿汉式
@@ -36,5 +40,3 @@
     - 根据不同的策略进行排序
 - Main
     - 程序入口
-
-
