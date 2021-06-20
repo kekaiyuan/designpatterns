@@ -1,17 +1,17 @@
 # 设计模式
 
-## 组合模式composite
+## 组合模式 composite
 一个简单的文件系统，包括文件夹和文件
 
-## 观察者observer
+## 观察者 observer
 一个标准的模板
 
-## 迭代器iterator
+## 迭代器 iterator
 实现了 ArrayList 和 LinkedList ， 以及它们的迭代器 Iterator
 
-## 
+## 代理 proxy
 
-## 单例singleton
+## 单例 singleton
 - Mgr01：饿汉式
 - Mgr02：与Mgr01一样，只是写法略有不同
 - Mgr03：懒汉式，多线程时无法实现单例
@@ -22,7 +22,7 @@
 - Mgr07：静态内部类方式
 - Mgr08：枚举方式
 
-## 策略strategy
+## 策略 strategy
 - 策略一：将猫根据体重升序排序
 - 策略二：将猫根据身高降序排序
 - 策略三：将狗按照食量升序排序
