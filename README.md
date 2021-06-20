@@ -1,5 +1,14 @@
 # 设计模式
 
+## 组合模式composite
+一个简单的文件系统，包括文件夹和文件
+
+## 观察者observer
+一个标准的模板
+
+## 迭代器Iterator
+实现了 ArrayList 和 LinkedList ， 以及它们的迭代器 Iterator
+
 ## 单例singleton
 - Mgr01：饿汉式
 - Mgr02：与Mgr01一样，只是写法略有不同
@@ -25,11 +34,5 @@
     - 根据不同的策略进行排序
 - Main
     - 程序入口
-  
-## 观察者observer
-一个标准的模板
-
-## 组合模式composite
-一个简单的文件系统，包括文件夹和文件
 
 
