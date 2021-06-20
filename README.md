@@ -6,8 +6,10 @@
 ## 观察者observer
 一个标准的模板
 
-## 迭代器Iterator
+## 迭代器iterator
 实现了 ArrayList 和 LinkedList ， 以及它们的迭代器 Iterator
+
+## 
 
 ## 单例singleton
 - Mgr01：饿汉式
