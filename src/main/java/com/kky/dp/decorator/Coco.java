@@ -1,4 +1,4 @@
-package com.kky.dp.decorate;
+package com.kky.dp.decorator;
 
 //椰果
 public class Coco extends CondimentDecorator{

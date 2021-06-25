@@ -1,4 +1,4 @@
-package com.kky.dp.decorate;
+package com.kky.dp.decorator;
 
 public abstract class Beverage {
 

@@ -1,4 +1,4 @@
-package com.kky.dp.decorate;
+package com.kky.dp.decorator;
 
 //配料装饰类
 public abstract class CondimentDecorator extends Beverage{

@@ -1,4 +1,4 @@
-package com.kky.dp.decorate;
+package com.kky.dp.decorator;
 
 //珍珠
 public class Pearl extends CondimentDecorator{
