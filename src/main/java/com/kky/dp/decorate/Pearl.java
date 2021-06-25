@@ -3,8 +3,6 @@ package com.kky.dp.decorate;
 //珍珠
 public class Pearl extends CondimentDecorator{
 
-    private Beverage beverage = null;
-
     public Pearl(Beverage beverage){
         this.beverage = beverage;
     }
@@ -20,4 +18,5 @@ public class Pearl extends CondimentDecorator{
     public String getDescription() {
         return beverage.getDescription() + " + 珍珠";
     }
+
 }

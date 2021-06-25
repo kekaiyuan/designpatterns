@@ -2,7 +2,6 @@ package com.kky.dp.decorate;
 
 //椰果
 public class Coco extends CondimentDecorator{
-    private Beverage beverage = null;
 
     public Coco(Beverage beverage){
         this.beverage = beverage;
