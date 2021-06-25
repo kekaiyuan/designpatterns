@@ -3,6 +3,10 @@
 ## 组合模式 composite
 一个简单的文件系统，包括文件夹和文件
 
+## 装饰者模式 decorator
+一份标准的模板。<br>
+可以用奶茶或珍珠无限地装饰奶茶。
+
 ## 工厂模式 factory
 一份标准的模板
 - 简单工厂 simplefactory
