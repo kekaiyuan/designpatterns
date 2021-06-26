@@ -22,10 +22,10 @@
 实现了 ArrayList 和 LinkedList ， 以及它们的迭代器 Iterator
 
 ## 代理 proxy
-- 静态代理 static
-- 动态代理 dynamic
+- 静态代理 staticproxy
+- 动态代理 dynamicproxy
   - JDK 方式的动态代理 proxy
-  - cglib 方式的动态 cglib
+  - cglib 方式的动态代理 cglib
 
 ## 单例 singleton
 - Mgr01：饿汉式

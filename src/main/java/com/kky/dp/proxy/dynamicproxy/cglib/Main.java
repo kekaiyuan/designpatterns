@@ -1,4 +1,4 @@
-package com.kky.dp.proxy.dynamic.cglib;
+package com.kky.dp.proxy.dynamicproxy.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

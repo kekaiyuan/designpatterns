@@ -1,28 +1,17 @@
-package com.kky.dp.proxy.v07;
-
+package com.kky.dp.proxy.staticproxy;
 
 import java.util.Random;
 
 /**
  * 静态代理
- *
  */
-public class Tank implements Movable {
-
-    /**
-     * 模拟坦克移动了一段儿时间
-     */
-    @Override
-    public void move() {
-        System.out.println("Tank moving claclacla...");
-        try {
-            Thread.sleep(new Random().nextInt(1000));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+public class Main {
 
     public static void main(String[] args) {
+
+        new TankTimeProxy(new Tank()).move();
+
+        System.out.println("------");
 
         new TankLogProxy(
                 new TankTimeProxy(
@@ -71,6 +60,21 @@ class TankLogProxy implements Movable {
         movable.move();
         long end = System.currentTimeMillis();
         System.out.println("stopped!");
+    }
+}
+
+class Tank implements Movable {
+    /**
+     * 模拟坦克移动了一段儿时间
+     */
+    @Override
+    public void move() {
+        System.out.println("Tank moving claclacla...");
+        try {
+            Thread.sleep(new Random().nextInt(1000));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
