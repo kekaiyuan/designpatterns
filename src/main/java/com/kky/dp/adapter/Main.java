@@ -7,15 +7,15 @@ import java.io.InputStreamReader;
 
 public class Main {
 
-    public static final int VOLTAGE = 220;
-
     public static void main(String[] args) throws Exception {
-        TV tv = new TV();
-        tv.work(VOLTAGE);
+        Electricity electricity = new Electricity(220);
+        TV1 tv1 = new TV1();
+        tv1.work(electricity);
 
         System.out.println("------");
 
-        Adapter adapter = new Adapter();
-        tv.work(adapter.convertVoltage(VOLTAGE));
+        TV2 tv2 = new TV2();
+        Adapter adapter = new Adapter(electricity);
+        tv2.work(adapter);
     }
 }
