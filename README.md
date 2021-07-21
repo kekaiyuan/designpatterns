@@ -26,11 +26,16 @@
 - 工厂方法 factorymethod
 - 抽象工厂 abstractfactory
 
+## 迭代器 iterator
+实现了 ArrayList 和 LinkedList ， 以及它们的迭代器 Iterator
+
 ## 观察者 observer
 一个标准的模板
 
-## 迭代器 iterator
-实现了 ArrayList 和 LinkedList ， 以及它们的迭代器 Iterator
+## 原型 prototype
+- 浅克隆 v1
+- 深克隆 v2
+- 克隆时字符串的处理 v3
 
 ## 代理 proxy
 - 静态代理 staticproxy
@@ -63,3 +68,6 @@
     - 根据不同的策略进行排序
 - Main
     - 程序入口
+    
+## 模板方法 templatemethod
+一份标准的模板
