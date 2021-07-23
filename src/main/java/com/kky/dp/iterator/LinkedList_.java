@@ -1,4 +1,4 @@
-package com.kky.dp.Iterator;
+package com.kky.dp.iterator;
 
 /**
  * 相比数组，这个容器不用考虑边界问题，可以动态扩展

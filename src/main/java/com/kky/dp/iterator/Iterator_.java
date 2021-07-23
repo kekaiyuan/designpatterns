@@ -1,4 +1,4 @@
-package com.kky.dp.Iterator;
+package com.kky.dp.iterator;
 
 public interface Iterator_<T> {
     //是否存在下一个元素

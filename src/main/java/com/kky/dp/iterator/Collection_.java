@@ -1,4 +1,4 @@
-package com.kky.dp.Iterator;
+package com.kky.dp.iterator;
 
 public interface Collection_<T> {
     void add(T object);

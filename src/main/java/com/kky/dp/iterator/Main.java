@@ -1,4 +1,4 @@
-package com.kky.dp.Iterator;
+package com.kky.dp.iterator;
 
 public class Main {
     public static void main(String[] args) {
