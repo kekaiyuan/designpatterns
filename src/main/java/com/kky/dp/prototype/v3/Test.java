@@ -1,41 +1,46 @@
 package com.kky.dp.prototype.v3;
 
-/*
-String 类型直接克隆。
-StringBuffer 和 StringBuilder 类型需要特殊处理。
+import lombok.AllArgsConstructor;
+import lombok.ToString;
+
+import java.io.Serializable;
+
+/**
+ * 通过反序列化实现深克隆
  */
 public class Test {
     public static void main(String[] args) throws Exception {
-        StringTest test1 = new StringTest(
-                new String("abc"), new StringBuffer("abc"), new StringBuilder("abc"));
-        StringTest test2 = (StringTest) test1.clone();
+        Person p1 = new Person(18, 100, new Location("bj", 22));
+        Person p2 = CloneUtil.clone(p1);
+        System.out.println(p2);
 
-        test1.str1 = "cba";
-        System.out.println(test2.str1);
+        System.out.println(p1.loc == p2.loc);
+        p1.loc.street = "sh";
+        System.out.println(p2.loc.street);
 
-        test1.str2.reverse();
-        System.out.println(test2.str2);
-
-        test1.str3.reverse();
-        System.out.println(test2.str3);
+        // 全克隆 100000 个对象要多久？
+        long startTime = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            Person temp = CloneUtil.clone(p1);
+        }
+        long endTime = System.currentTimeMillis();
+        System.out.println(endTime-startTime);
     }
 }
 
-class StringTest implements Cloneable {
-    String str1;
-    StringBuffer str2;
-    StringBuilder str3;
+@AllArgsConstructor
+@ToString
+class Person implements Serializable {
+    private static final long serialVersionUID = -280939426127136800L;
+    int age;
+    int score;
+    Location loc;
+}
 
-    public StringTest(String str1, StringBuffer str2, StringBuilder str3) {
-        this.str1 = str1;
-        this.str2 = str2;
-        this.str3 = str3;
-    }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-
-        //return new StringTest(this.str1, new StringBuffer(this.str2), new StringBuilder(this.str3));
-    }
+@AllArgsConstructor
+@ToString
+class Location implements Serializable {
+    private static final long serialVersionUID = 5934373144430208588L;
+    String street;
+    int roomNo;
 }
