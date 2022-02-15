@@ -9,7 +9,7 @@ package com.kky.dp.singleton;
  * */
 public class Singleton04 {
 
-    //使用volatile关键字，防止JVM内部语句重排后，没有初始化就返回INSTANCE
+    //使用volatile关键字，禁止指令重排
     private static volatile Singleton04 INSTANCE;
 
     private Singleton04(){
