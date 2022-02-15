@@ -12,14 +12,16 @@ package com.kky.dp.singleton;
 * 唯一缺点：不管用到与否，类装载时就完成实例化
 * 经典中的经典
 * */
-public class Mgr01 {
-    private static final Mgr01 INSTANCE = new Mgr01();
+public class Singleton01 {
+
+    private static final Singleton01 INSTANCE = new Singleton01();
+
     //将构造函数设置为private，这样外部类就无法创建，单例模式的关键点
-    private Mgr01(){}
-    public static Mgr01 getInstance(){
-        return INSTANCE;
+    private Singleton01(){
+        System.out.println(1);
     }
 
-    public static void main(String[] args) {
+    public static Singleton01 getInstance(){
+        return INSTANCE;
     }
 }

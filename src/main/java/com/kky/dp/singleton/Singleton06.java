@@ -9,8 +9,11 @@ package com.kky.dp.singleton;
 * 不仅可以解决线程同步，还可以防止反序列化
 * 完美版本3
 * */
-public enum Mgr08 {
+public enum Singleton06 {
 
     INSTANCE;
 
+    public static Singleton06 getInstance(){
+        return INSTANCE;
+    }
 }
