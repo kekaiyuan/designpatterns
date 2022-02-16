@@ -21,5 +21,4 @@ public class Cat {
                 ", height=" + height +
                 '}';
     }
-
 }

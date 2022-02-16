@@ -9,7 +9,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-
         ComparatorContext comparatorContext = null;
         Sorter sorter = new Sorter();
         //创建Cat数组
@@ -18,19 +17,16 @@ public class Main {
         Dog[] dogs = {new Dog(5), new Dog(3), new Dog(1)};
 
         //将猫根据体重升序排序
-
         comparatorContext = new ComparatorContext(new CatWeightComparator());
         sorter.sort(cats, comparatorContext);
         System.out.println("将猫根据体重升序排序\n" + Arrays.toString(cats));
 
         //将猫根据身高降序排序
-
         comparatorContext = new ComparatorContext(new CatHeightComparator());
         sorter.sort(cats, comparatorContext);
         System.out.println("将猫根据身高降序排序\n" + Arrays.toString(cats));
 
         //将狗按照食量升序排序
-
         comparatorContext = new ComparatorContext(new DogComparator());
         sorter.sort(dogs, comparatorContext);
         System.out.println("将狗按照食量升序排序\n" + Arrays.toString(dogs));
