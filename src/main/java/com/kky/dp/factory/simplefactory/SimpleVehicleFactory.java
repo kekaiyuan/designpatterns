@@ -1,5 +1,7 @@
 package com.kky.dp.factory.simplefactory;
 
+import com.kky.dp.factory.vehicle.*;
+
 /**
  * @author 柯凯元
  * @create 2021/6/14 20:24
@@ -11,43 +13,17 @@ package com.kky.dp.factory.simplefactory;
 public class SimpleVehicleFactory {
 
     public Vehicle createVehicle(VehicleType type) {
-        Vehicle vehicle = null;
         switch (type) {
             case Car:
-                vehicle = new Car();
-                break;
+                return new Car();
             case Plane:
-                vehicle = new Plane();
-                break;
+                return new Plane();
             case Broom:
-                vehicle = new Broom();
-                break;
-        }
-        return vehicle;
-    }
-
-    class Car extends Vehicle {
-
-        @Override
-        public void go() {
-            System.out.println("开汽车");
+                return new Broom();
+            default:
+                return null;
         }
     }
 
-    class Plane extends Vehicle {
-
-        @Override
-        public void go() {
-            System.out.println("开飞机");
-        }
-    }
-
-    class Broom extends Vehicle {
-
-        @Override
-        public void go() {
-            System.out.println("骑扫帚");
-        }
-    }
 }
 

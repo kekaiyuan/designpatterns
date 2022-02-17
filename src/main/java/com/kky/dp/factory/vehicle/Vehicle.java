@@ -1,4 +1,4 @@
-package com.kky.dp.factory.factorymethod;
+package com.kky.dp.factory.vehicle;
 
 /**
  * @author 柯凯元

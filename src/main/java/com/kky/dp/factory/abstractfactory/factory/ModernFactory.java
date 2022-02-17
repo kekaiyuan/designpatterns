@@ -2,10 +2,9 @@ package com.kky.dp.factory.abstractfactory.factory;
 
 import com.kky.dp.factory.abstractfactory.food.Food;
 import com.kky.dp.factory.abstractfactory.food.InstantNoodles;
-import com.kky.dp.factory.abstractfactory.vehicle.Car;
-import com.kky.dp.factory.abstractfactory.vehicle.Vehicle;
 import com.kky.dp.factory.abstractfactory.weapon.AK47;
 import com.kky.dp.factory.abstractfactory.weapon.Weapon;
+import com.kky.dp.factory.vehicle.*;
 
 /**
  * @author 柯凯元

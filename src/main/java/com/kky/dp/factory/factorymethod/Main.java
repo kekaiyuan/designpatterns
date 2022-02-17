@@ -1,13 +1,19 @@
 package com.kky.dp.factory.factorymethod;
 
+import com.kky.dp.factory.vehicle.*;
+
 public class Main {
     public static void main(String[] args) {
-        VehicleFactory factory1 = new CarFactory();
-        Vehicle vehicle1 = factory1.createVehicle();
-        vehicle1.go();
+        VehicleFactory carFactory = new CarFactory();
+        Vehicle car = carFactory.createVehicle();
+        car.go();
 
-        VehicleFactory factory2 = new PlaneFactory();
-        Vehicle vehicle2 = factory2.createVehicle();
-        vehicle2.go();
+        VehicleFactory planeFactory = new PlaneFactory();
+        Vehicle plane = planeFactory.createVehicle();
+        plane.go();
+
+        VehicleFactory broomFactory = new BroomFactory();
+        Vehicle broom = broomFactory.createVehicle();
+        broom.go();
     }
 }

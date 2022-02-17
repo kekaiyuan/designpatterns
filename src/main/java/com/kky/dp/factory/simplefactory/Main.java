@@ -1,18 +1,21 @@
 package com.kky.dp.factory.simplefactory;
 
-    public class Main {
-        public static void main(String[] args) {
-            Vehicle vehicle = null;
-            SimpleVehicleFactory simpleVehicleFactory = new SimpleVehicleFactory();
+import com.kky.dp.factory.vehicle.*;
 
-            vehicle = simpleVehicleFactory.createVehicle(VehicleType.Car);
-            vehicle.go();
+/**
+ * @author kekaiyuan
+ */
+public class Main {
+    public static void main(String[] args) {
+        SimpleVehicleFactory simpleVehicleFactory = new SimpleVehicleFactory();
 
-            vehicle = simpleVehicleFactory.createVehicle(VehicleType.Plane);
-            vehicle.go();
+        Vehicle car = simpleVehicleFactory.createVehicle(VehicleType.Car);
+        car.go();
 
-            vehicle = simpleVehicleFactory.createVehicle(VehicleType.Broom);
-            vehicle.go();
+        Vehicle plane = simpleVehicleFactory.createVehicle(VehicleType.Plane);
+        plane.go();
 
-        }
+        Vehicle broom = simpleVehicleFactory.createVehicle(VehicleType.Broom);
+        broom.go();
     }
+}
