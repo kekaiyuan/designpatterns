@@ -1,4 +1,4 @@
-## 单例 singleton
+## 单例模式 singleton
 - Singleton01：静态变量饿汉式
 - Singleton02：静态代码块饿汉式
 - Singleton03：懒汉式
