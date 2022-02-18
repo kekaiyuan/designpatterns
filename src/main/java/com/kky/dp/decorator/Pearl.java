@@ -1,6 +1,6 @@
 package com.kky.dp.decorator;
 
-//珍珠
+//装饰类：珍珠
 public class Pearl extends CondimentDecorator{
 
     public Pearl(Beverage beverage){
