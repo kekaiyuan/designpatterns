@@ -16,4 +16,5 @@ public abstract class Beverage {
     public void printDescription() {
         System.out.println(getDescription() + " : " + cost() + " 元");
     }
+
 }
